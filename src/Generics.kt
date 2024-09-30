@@ -22,4 +22,28 @@ fun main(){
     println(stringBox.getContent());
     println(numberBox.getContent());
 
+
+    //Null Safety
+    var test2: String?= "Saurabh";
+    test2=null
+    println(test2)
+
+    //Safe Calls
+
+    var length:Int? = test2?.length 
+    println(length)
+
+    //Elvis Operator
+
+    var lengthOrZero:Int= test2?.length ?: 0;
+    println(lengthOrZero);
+
+    //Safe cast
+
+    var obj:Any = "I am String";
+    val str:String?= obj as? String;
+    val str2:Int? = lengthOrZero as Int;
+    println(str)
+    println(str2)
+
 }
