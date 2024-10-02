@@ -58,7 +58,7 @@ class Triangle:Shape{
 
 fun main(){
 
-    var person = Person("Saurabh",28);
+    var person = Person("Saurabh",30);
     person.introduce();
 
     var rectangle = Rectangle(20,15);
